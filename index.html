@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hive Construction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══ NAV ══════════════════════════════════ -->
+<nav id="mainNav">
+  <a href="#" class="nav-logo">
+    <img src="logo.svg" alt="Hive Construction Logo">
+    <div class="nav-logo-text">Hive <span>Construction</span></div>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#sketch">Design Tool</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="theme-toggle" title="Switch theme">
+      <div class="toggle-option active" data-theme="dark">🌙</div>
+      <div class="toggle-option" data-theme="light">☀️</div>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services">Services</a>
+  <a href="#sketch">Design Tool</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact" class="mobile-cta">Get a Quote</a>
+</div>
+
+<!-- ══ HERO ═════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-bg-stripe"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">Est. 1998 · Licensed & Insured</div>
+    <h1>We <em>Build</em><br>Your Vision<br>From The<br><em>Ground Up</em></h1>
+    <p class="hero-desc">
+      Commercial and residential construction with precision engineering —
+      delivered on time, on budget. From concept sketch to final inspection,
+      Hive has you covered.
+    </p>
+    <div class="hero-btns">
+      <a href="#sketch" class="btn-primary">Sketch Your Build →</a>
+      <a href="#projects" class="btn-ghost">View Projects</a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="blueprint-frame">
+      <div class="blueprint-corner tl"></div>
+      <div class="blueprint-corner tr"></div>
+      <div class="blueprint-corner bl"></div>
+      <div class="blueprint-corner br"></div>
+      <svg viewBox="0 0 380 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="bgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(204,160,68,0.13)" stroke-width="0.5"/>
+          </pattern>
+        </defs>
+        <rect width="380" height="280" fill="url(#bgrid)"/>
+        <rect x="60" y="60" width="260" height="160" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+        <polyline points="40,60 190,20 340,60" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+        <rect x="160" y="160" width="60" height="60" fill="none" stroke="var(--gold)" stroke-width="1"/>
+        <rect x="80" y="90" width="50" height="40" fill="none" stroke="var(--gold)" stroke-width="1"/>
+        <line x1="105" y1="90" x2="105" y2="130" stroke="var(--gold)" stroke-width="0.5"/>
+        <line x1="80"  y1="110" x2="130" y2="110" stroke="var(--gold)" stroke-width="0.5"/>
+        <rect x="250" y="90" width="50" height="40" fill="none" stroke="var(--gold)" stroke-width="1"/>
+        <line x1="275" y1="90"  x2="275" y2="130" stroke="var(--gold)" stroke-width="0.5"/>
+        <line x1="250" y1="110" x2="300" y2="110" stroke="var(--gold)" stroke-width="0.5"/>
+        <line x1="60" y1="240" x2="320" y2="240" stroke="var(--gold)" stroke-width="0.5" stroke-dasharray="4 2" opacity="0.4"/>
+        <line x1="60"  y1="236" x2="60"  y2="244" stroke="var(--gold)" stroke-width="0.5" opacity="0.4"/>
+        <line x1="320" y1="236" x2="320" y2="244" stroke="var(--gold)" stroke-width="0.5" opacity="0.4"/>
+        <text x="190" y="255" text-anchor="middle" fill="var(--gold)" opacity="0.55" font-family="Courier Prime,monospace" font-size="9">26.0 m</text>
+        <text x="190" y="14"  text-anchor="middle" fill="var(--gold)" opacity="0.45" font-family="Courier Prime,monospace" font-size="10" letter-spacing="2">FRONT ELEVATION</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ══ STATS ════════════════════════════════ -->
+<div class="stats-band">
+  <div class="stat-item">
+    <div class="stat-num">850+</div>
+    <div class="stat-label">Projects Completed</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">26</div>
+    <div class="stat-label">Years in Business</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">98%</div>
+    <div class="stat-label">On-Time Delivery</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num">$2B+</div>
+    <div class="stat-label">Value Built</div>
+  </div>
+</div>
+
+<!-- ══ SERVICES ══════════════════════════════ -->
+<section id="services">
+  <div class="section-label">// What We Do</div>
+  <div class="section-title">Our <em>Services</em></div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon">🏗️</div>
+      <h3>Commercial Construction</h3>
+      <p>Office towers, retail centres, warehouses and industrial facilities built to code with full project management and precision scheduling.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon">🏠</div>
+      <h3>Residential Builds</h3>
+      <p>Custom homes, multi-family developments, and luxury residences. We work from your sketch or blueprint — no idea too big or detailed.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon">🔧</div>
+      <h3>Renovations & Fit-Out</h3>
+      <p>Interior fit-outs, structural renovations, and full-scale remodelling for commercial and residential properties.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-icon">📐</div>
+      <h3>Design & Engineering</h3>
+      <p>In-house structural engineers who take your rough sketch to full blueprints, permits, and council approvals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKETCH TOOL ════════════════════════════ -->
+<section id="sketch">
+  <div class="sketch-wrapper">
+    <div class="section-label">// Design Studio</div>
+    <div class="section-title">Sketch Your <em>Build Idea</em></div>
+    <p class="sketch-desc">
+      Got a rough idea? Draw it out below — or upload a sketch, napkin drawing,
+      or reference image. Our team will turn it into a real plan.
+    </p>
+
+    <div class="sketch-container">
+      <!-- Toolbar -->
+      <div class="sketch-toolbar">
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+          <button class="tool-btn active" id="tool-pen">✏️ Pen</button>
+          <button class="tool-btn" id="tool-line">/ Line</button>
+          <button class="tool-btn" id="tool-rect">▭ Rect</button>
+          <button class="tool-btn" id="tool-circle">◯ Circle</button>
+          <button class="tool-btn" id="tool-eraser">⬜ Erase</button>
+        </div>
+        <div class="tool-sep"></div>
+        <div style="display:flex;gap:.5rem;align-items:center;">
+          <div class="color-dot active" style="background:#cca044;" data-color="#cca044" data-theme-color="dark" title="Gold"></div>
+          <div class="color-dot" style="background:#ffffff;border-color:rgba(128,128,128,0.4);" data-color="#ffffff" title="White"></div>
+          <div class="color-dot" style="background:#6ec6f0;" data-color="#6ec6f0" title="Blue"></div>
+          <div class="color-dot" style="background:#e05252;" data-color="#e05252" title="Red"></div>
+          <div class="color-dot" style="background:#7ec87e;" data-color="#7ec87e" title="Green"></div>
+          <div class="color-dot" style="background:#1a1712;" data-color="#1a1712" data-theme-color="light" title="Black"></div>
+        </div>
+        <div class="tool-sep"></div>
+        <div style="display:flex;gap:.5rem;align-items:center;">
+          <span style="font-size:.72rem;color:var(--text-muted);letter-spacing:.08em;">SIZE</span>
+          <input type="range" class="size-slider" id="brushSize" min="1" max="30" value="3" step="1">
+          <span id="sizeDisplay" style="font-size:.8rem;color:var(--text-muted);min-width:18px;">3</span>
+        </div>
+      </div>
+
+      <canvas id="drawCanvas" width="960" height="480"></canvas>
+
+      <div class="sketch-footer">
+        <span class="sketch-hint">// CLICK & DRAG TO DRAW — TOUCH SUPPORTED</span>
+        <div class="sketch-actions">
+          <button class="tool-btn" id="btn-undo">↩ Undo</button>
+          <button class="tool-btn" id="btn-clear">🗑 Clear</button>
+          <button class="tool-btn" id="btn-download">⬇ Save PNG</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upload -->
+    <div class="upload-zone" id="uploadZone">
+      <input type="file" id="fileInput" accept="image/*">
+      <div class="upload-icon">📎</div>
+      <p><strong>Upload a sketch or reference image</strong></p>
+      <p style="margin-top:.4rem;font-size:.8rem;">Drag & drop or click — JPG, PNG accepted</p>
+      <div id="preview-wrap">
+        <img id="uploadPreview" src="" alt="Uploaded sketch">
+      </div>
+    </div>
+
+    <div class="sketch-send">
+      <a href="#contact" class="btn-primary">Send This Sketch to Our Team →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ═══════════════════════════════ -->
+<section id="projects">
+  <div class="section-label">// Our Work</div>
+  <div class="section-title">Recent <em>Projects</em></div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-bg">🏢</div>
+      <div class="project-overlay">
+        <div class="project-type">Commercial · 2024</div>
+        <h3>Meridian Office Tower</h3>
+        <p>12-storey tower, Suva CBD — $42M, 18 months</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-bg">🏘️</div>
+      <div class="project-overlay">
+        <div class="project-type">Residential · 2024</div>
+        <h3>Pacific Heights Estate</h3>
+        <p>48-unit development — 3 weeks ahead of schedule</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-bg">🏪</div>
+      <div class="project-overlay">
+        <div class="project-type">Retail · 2023</div>
+        <h3>Harbor Market Complex</h3>
+        <p>28,000 sqm retail & dining — Lautoka waterfront</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-bg">🏭</div>
+      <div class="project-overlay">
+        <div class="project-type">Industrial · 2023</div>
+        <h3>Viti Industrial Hub</h3>
+        <p>Logistics & processing facility — 14,000 sqm</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-bg">🏫</div>
+      <div class="project-overlay">
+        <div class="project-type">Community · 2022</div>
+        <h3>Nasinu Community Centre</h3>
+        <p>Government civic facility — delivered under budget</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-bg">🏨</div>
+      <div class="project-overlay">
+        <div class="project-type">Hospitality · 2022</div>
+        <h3>Coral Bay Resort</h3>
+        <p>5-star luxury resort, 120 keys — Coral Coast, Fiji</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ════════════════════════════════ -->
+<section id="contact">
+  <div class="section-label">// Get In Touch</div>
+  <div class="section-title">Let's Build <em>Something</em></div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="contact-desc">
+        Whether you have a detailed brief or just a rough idea on a napkin,
+        we're ready to talk. Get a free consultation and estimate from our team.
+      </p>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📍</div>
+        <div class="contact-detail-text">
+          <strong>Head Office</strong>
+          <span>14 Kings Road, Nasinu, Fiji</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">📞</div>
+        <div class="contact-detail-text">
+          <strong>Phone</strong>
+          <span>+679 330 4521</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">✉️</div>
+        <div class="contact-detail-text">
+          <strong>Email</strong>
+          <span>info@hiveconstruction.com.fj</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <div class="contact-detail-icon">🕐</div>
+        <div class="contact-detail-text">
+          <strong>Hours</strong>
+          <span>Mon–Fri · 7:30am – 5:00pm</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div class="form-field">
+          <label>First Name</label>
+          <input type="text" placeholder="John" required>
+        </div>
+        <div class="form-field">
+          <label>Last Name</label>
+          <input type="text" placeholder="Smith">
+        </div>
+      </div>
+      <div class="form-field">
+        <label>Email Address</label>
+        <input type="email" placeholder="john@example.com" required>
+      </div>
+      <div class="form-field">
+        <label>Project Type</label>
+        <select>
+          <option value="">Select a project type…</option>
+          <option>New Home Build</option>
+          <option>Commercial Construction</option>
+          <option>Renovation / Fit-Out</option>
+          <option>Industrial / Warehouse</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label>Tell Us About Your Project</label>
+        <textarea placeholder="Describe your project, timeline, and budget range…"></textarea>
+      </div>
+      <button type="submit" class="btn-submit" id="submitBtn">Send Enquiry →</button>
+    </form>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">
+    <img src="logo.svg" alt="Hive Construction">
+    <div class="footer-logo-text">Hive <span>Construction</span></div>
+  </div>
+  <p>© 2026 Hive Construction. All rights reserved.</p>
+  <ul class="footer-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
